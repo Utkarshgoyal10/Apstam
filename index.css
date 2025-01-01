@@ -163,3 +163,7 @@
   }
 
 
+  html {
+    scroll-padding-top: 5rem; /* Adjust to the height of your navbar */
+  }
+  
