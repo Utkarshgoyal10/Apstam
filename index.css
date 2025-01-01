@@ -158,5 +158,8 @@
         opacity: 1;
     }
 }
+.hidden {
+    display: none; /* Ensures the element is not visible */
+  }
 
 
