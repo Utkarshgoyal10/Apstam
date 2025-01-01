@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APSTAM</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    
+</head>
+<body class=" min-h-screen">
+
+    <header class="bg-white shadow-sm py-4 w-full fixed top-0 z-50 head">
+        <div class="container mx-auto px-6 lg:px-4 flex justify-between items-center">
+            <img src="apstam.png" alt="APSTAM Logo" class="h-12 w-auto object-contain">
+    
+            <!-- Hamburger Icon -->
+            <button id="hamburger-btn" class="block lg:hidden px-4 text-black text-2xl pt-0">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-md lg:hidden mt-0 ">
+                <nav class="flex flex-col items-start p-4 space-y-2">
+                    <a href="#next-section" class="text-black font-bold text-xl hover:text-teal-800 transition duration-300">Work</a>
+                    <a href="#client" class="text-black font-bold text-xl hover:text-teal-800 transition duration-300">Service</a>
+                    <a href="#contact" class="text-black font-bold text-xl hover:text-teal-800 transition duration-300">Contact Us</a>
+                </nav>
+            </div>
+    
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex space-x-8 sm:space-x-8 text-sm md:text-base">
+                <a href="#next-section" class="text-black font-bold text-xl lg:text-2xl hover:text-teal-800 hover:border-b-2 hover:border-teal-600 transition duration-300">Work</a>
+                <a href="#client" class="text-black font-bold text-xl lg:text-2xl hover:text-teal-800 hover:border-b-2 hover:border-teal-600 transition duration-300">Service</a>
+                <a href="#contact" class="text-black font-bold text-xl lg:text-2xl hover:text-teal-800 hover:border-b-2 hover:border-teal-600 transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+    <section class="text-center mt-24 lg:mt-24 ">
+        <h1 class="text-5xl font-bold text-black mt-title">Building Next-Gen Ground Power Unit</h1>
+        <div class="mt-36 lg:mt-4">
+            <img src="group.png" alt="Group Image" class="w-full h-auto max-h-[100vh] object-contain">
+        </div>
+        <div class="mt-5">
+            <a href="#next-section">
+                <button class="text-4xl text-teal-600 bouncing-button">
+                    &#8595;
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <section id="next-section" class="h-[80vh] bg-transparent mt-content ">
+        <div class="container mx-auto px-4">
+            <div class="lg:flex lg:items-center hidden lg:block lg:justify-between lg:h-full">
+                <div class="lg:w-1/2">
+                    <h2 class="text-5xl font-bold text-black mb-6 mt-20">
+                        Bringing Complex<br> Hardware Forward on<br> the Battlefield
+                    </h2>
+                    <p class="text-[24px] font-bold text-black mb-6 mt-12">
+                        At <span class="text-teal-600">APSTAM</span>, we stand as the backbone of battlefield readiness, crafting state-of-the-art ground power units for military helicopters and jets.
+                    </p>
+                    <p class="text-[24px] font-bold text-black mb-6 mt-16">
+                        Our mission is to empower the defenders of<br>our nation with unyielding confidence in their<br>machines—ensuring they roar to life,<br>mission-ready, every single time.
+                    </p>
+                    
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="machine.svg" alt="Machine Image" class="w-full h-auto object-contain">
+                </div>
+            </div>
+            <div class="lg:hidden text-center mt-16">
+                <h2 class="text-5xl font-bold text-black ">
+                    Bringing Complex Hardware Forward on<br> the Battlefield
+                </h2>
+                <p class="text-2xl font-bold text-black  mt-14">
+                    At <span class="text-teal-800">APSTAM</span>, we stand as the backbone of  battlefield readiness ,<br> crafting state-of-the-art <br>ground power units for <span class="text-teal-800">military helicopters and jets</span> .
+                </p>
+                <p class="text-xl font-bold text-black mb-6">
+                    Our mission is to empower the defenders of<br>our nation with unyielding confidence in their<br>machines—ensuring they roar to life,<br>mission-ready, every single time.
+                </p>
+                <img src="machine.svg" alt="Machine Image" class="w-full h-auto object-contain">
+            </div>
+        </div>
+    </section>
+    <div class="bg-gradient-to-b from-white to-black">
+    <!-- Clients Section -->
+    <section id="client" class="clients-section mt-80 lg:mt-8">
+        <h2 class="text-5xl font-bold text-black client-heading">
+            Our Clients
+        </h2>
+        <div class="logo-slider">
+            <div class="logo-track">
+                <!-- First set of logos -->
+                <div class="logo-item">
+                    <img src="airarmy.png" alt="Air Army">
+                </div>
+                <div class="logo-item">
+                    <img src="indianarmy.png" alt="Indian Army">
+                </div>
+                <div class="logo-item">
+                    <img src="sapro.png" alt="Sapro">
+                </div>
+                <div class="logo-item">
+                    <img src="audrin.png" alt="Audrin">
+                </div>
+                <div class="logo-item">
+                    <img src="Black.png" alt="Black Logo">
+                </div>
+                <!-- Duplicate set for seamless loop -->
+                <div class="logo-item">
+                    <img src="airarmy.png" alt="Air Army">
+                </div>
+                <div class="logo-item">
+                    <img src="indianarmy.png" alt="Indian Army">
+                </div>
+                <div class="logo-item">
+                    <img src="sapro.png" alt="Sapro">
+                </div>
+                <div class="logo-item">
+                    <img src="audrin.png" alt="Audrin">
+                </div>
+                <div class="logo-item">
+                    <img src="Black.png" alt="Black Logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="relative bg-transparent xs:rounded-[4rem] sm:rounded-[8rem] m-1 mb-2">
+        <div class="flex-col">
+            <h2 class="pt-8 text-center font-bold text-[#18181b] text-4xl">Get In Touch</h2>
+            <div class="mx-auto mt-1 mb-4 bg-retechgen-blue w-40 h-1"></div>
+        </div>
+        <div class="flex flex-wrap lg:flex-col justify-evenly lg:items-center">
+           
+            
+            <div class="relative w-full max-w-4xl mx-auto mt-36 mb-40 lg:mt-8"> 
+                <div class="bg-zinc-700 w-80 rounded-3xl absolute left-1/2 transform -translate-x-1/2 -top-32 lg:left-0 lg:-translate-x-1/4 lg:top-10 z-10">
+                    <div class="flex-col p-8">
+                        <div class="my-6 flex items-center">
+                            <img src="https://www.apstam.com/assets/touch_gps-07b3a83f.svg" alt="location" class="h-7">
+                            <h2 class="ml-3 text-white font-medium">Delhi-NCR, India</h2>
+                        </div>
+                        <div class="my-6 flex items-center">
+                            <img class="h-5" src="https://www.apstam.com/assets/touch_mail-953ba3f7.svg" alt="email">
+                            <h2 class="ml-2 text-white font-medium">apstamtechnologies@gmail.com</h2>
+                        </div>
+                        <div class="my-6 flex items-center">
+                            <img src="https://www.apstam.com/assets/touch_call-299dec9a.svg" alt="phone" class="h-7">
+                            <h2 class="ml-3 text-white font-medium">+91 78899 18706</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white shadow-lg rounded-lg p-8 pt-20 lg:pl-64"> 
+                    <form name="google-sheet" id="contact-form" method="post" class="flex flex-col gap-4">
+                        <input class="p-3 h-12 w-full text-theme-gray2 font-medium border-[#a1a1aa] border-solid border-2 rounded-md outline-1 outline-[#1b8da694] bg-[#EEEEEE7A]" type="text" placeholder="First Name" name="f_name" id="f_name">
+                        <input class="p-3 h-12 w-full text-theme-gray2 font-medium border-[#a1a1aa] border-solid border-2 rounded-md outline-1 outline-[#1b8da694] bg-[#EEEEEE7A]" type="text" placeholder="Last Name" name="l_name" id="l_name">
+                        <input class="p-3 h-12 w-full text-theme-gray2 font-medium border-[#a1a1aa] border-solid border-2 rounded-md outline-1 outline-[#1b8da694] bg-[#EEEEEE7A]" type="number" placeholder="Mobile Number" name="number" id="number">
+                        <input class="p-3 h-12 w-full text-theme-gray2 font-medium border-[#a1a1aa] border-solid border-2 rounded-md outline-1 outline-[#1b8da694] bg-[#EEEEEE7A]" type="email" placeholder="Email" name="email" id="email">
+                        <textarea class="p-3 h-36 w-full text-theme-gray2 font-medium border-[#a1a1aa] border-solid border-2 rounded-md outline-1 outline-[#1b8da694] bg-[#EEEEEE7A]" name="message" id="message" placeholder="Enter Your Message"></textarea>
+                        <button type="submit" class="mt-4 hover:bg-bg-zinc-800 h-12 w-36 bg-zinc-700 text-white rounded-3xl">
+                            <p class="text-lg font-semibold">Send</p>
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div  id="footer">
+    <footer class="flex justify-around flex-wrap m-3 mt-14 pt-10">
+        <div class="w-[19rem] h-60">
+            <div class="logo">
+                <img class="h-18 m-2 filter invert" src="./apstam.png" alt="Logo">
+            </div>
+            <div class="text">
+                <p class="text-white font-normal text-md p-3">
+                    Founded by <a>Kanav Sharma</a> <br>Contact: 
+                    <a href="https://www.linkedin.com/in/kanav-sharma-2a6713226/">LinkedIn</a> | 
+                    <a href="mailto:kanavs302@gmail.com">Mail</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Address Section -->
+        <div class="w-[19rem] h-60">
+            <div class="flex flex-col ml-3">
+                <h3 class="text-xl text-white font-medium">Address</h3>
+                <div class="flex flex-col items-center h-1 w-24 bg-[#1B8DA6] mt-2"></div>
+            </div>
+            <div class="text w-56">
+                <p class="text-white font-normal text-md p-3 leading-7">
+                    T-5, Technology Business Incubator, KIET<br> 
+                    Ghaziabad, Uttar Pradesh, India <br> 
+                    PIN: 201206
+                </p>
+            </div>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="w-[19rem] xs:h-48 sm:h-60">
+            <div class="flex flex-col ml-3">
+                <h3 class="text-xl text-white font-medium">Social</h3>
+                <div class="flex flex-col items-center h-1 w-18 bg-[#1B8DA6] mt-2"></div>
+            </div>
+            <div class="w-44 mt-7 socials">
+                <ul class="flex justify-around">
+                    <li class="filter invert rounded-[50%] cursor-pointer">
+                        <a href="https://www.instagram.com/apstamtechnologies/" target="_blank">
+                            <i class="fab fa-instagram text-4xl"></i>
+                        </a>
+                    </li>
+                    <li class="filter invert rounded-[50%] cursor-pointer">
+                        <a href="https://www.linkedin.com/in/kanav-sharma-2a6713226/">
+                            <i class="fab fa-linkedin text-4xl"></i> 
+                        </a>
+                    </li>
+                    <li class="filter invert rounded-[50%] cursor-pointer">
+                        <a href="https://www.instagram.com/apstamtechnologies/">
+                            <i class="fab fa-twitter text-4xl"></i> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <!-- Supported By Section -->
+        <div class="w-[19rem] h-60">
+            <div class="flex flex-col ml-3">
+                <h3 class="text-xl text-white font-medium">Supported By</h3>
+                <div class="flex flex-col items-center h-1 w-30 bg-[#1B8DA6] mt-2"></div>
+            </div>
+            <div class="links">
+                <ul class="text-[#1F2347]/70 font-medium text-sm p-3 flex flex-col justify-around h-40">
+                    <div class="flex justify-between">
+                        <li class="hover:text-retechgen-blue cursor-pointer flex w-[800px] items-center">
+                            <img src="tbikiet.png" alt="TBI KIET">
+                            </li>
+                        <li class="hover:text-retechgen-blue cursor-pointer">
+                            <img src="https://www.apstam.com/assets/techstars-1ce863e9.png" alt="Techstars">
+                        </li>
+                    </div>
+                    <div class="flex justify-between">
+                        <li class="hover:text-retechgen-blue cursor-pointer">
+                            <img src="startup.png" alt="Startinup">
+                        </li>
+                        <li class="hover:text-retechgen-blue cursor-pointer">
+                          <img src="startupindia.png"alt="StartupIndia">
+                          </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Bottom Section -->
+    <div class="h-05 w-full bg-[#000000]/20 mt-14"></div>
+    <h2 class="font-medium text-white my-2 text-lg flex justify-around">
+        APSTAM @2025 - All rights reserved
+    </h2>
+   
+</div>
+</div>  
+
+    
+    
+<script src="index.js"></script>
+</body>
+</html>
