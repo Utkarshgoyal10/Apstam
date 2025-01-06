@@ -2,54 +2,60 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbzDJL35AltIkgQZCu37Bx
 const form = document.forms['google-sheet'];
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
+    const name = document.getElementById("name").value;
+    const street = document.getElementById("street").value;
+    const city = document.getElementById("city").value;
+    const pincode = document.getElementById("pincode").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
 
-  const firstName = document.getElementById("f_name").value;
-  const lastName = document.getElementById("l_name").value;
-  const phoneNumber = document.getElementById("number").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('street', street);
+    formData.append('city', city);
+    formData.append('pincode', pincode);
+    formData.append('phone', phone);
+    formData.append('email', email);
 
-  const formData = new FormData();
-  formData.append('f_name', firstName);
-  formData.append('l_name', lastName);
-  formData.append('number', phoneNumber);
-  formData.append('email', email);
-  formData.append('message', message);
-
-  // Send data to Google Apps Script web app
-  fetch(scriptURL, { 
-    method: 'POST',
-    body: formData
-  })
-  .then(response => {
-    alert("Thanks for Contacting us..! We Will Contact You Soon...");
-    form.reset(); // Reset the form after submission
-  })
-  .catch(error => console.error('Error!', error.message));
+    // Send data to Google Apps Script web app
+    fetch(scriptURL, { 
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            alert("Thanks for contacting us! We will get back to you soon.");
+            form.reset(); // Reset the form after submission
+        } else {
+            throw new Error('Network response was not ok');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert("There was an error submitting your form. Please try again.");
+    });
 });
 
+// Mobile menu functionality (if needed)
 document.addEventListener('DOMContentLoaded', () => {
-  const hamburgerBtn = document.getElementById('hamburger-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mobileLinks = document.querySelectorAll('.mobile-link');
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (hamburgerBtn && mobileMenu) {
+        const mobileLinks = document.querySelectorAll('.mobile-link');
 
-  // Toggle the menu visibility
-  hamburgerBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-  });
+        // Toggle the menu visibility
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
-  // Hide the menu when any link is clicked
-  mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-      });
-  });
+        // Hide the menu when any link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
 });
-
-
-
-
-
-
