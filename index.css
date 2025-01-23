@@ -35,6 +35,10 @@
     position: relative;
     z-index: 2;
 }
+#work, #service {
+    position: relative;
+}
+
 
 .client-heading:hover {
     text-shadow: 0 0 5px #00bfae, 0 0 10px #00bfae, 0 0 15px #00bfae;
